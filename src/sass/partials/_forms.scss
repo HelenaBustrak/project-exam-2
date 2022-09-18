@@ -1,0 +1,44 @@
+.formContainer {
+    margin-top: 20px;
+    width: 90%;
+
+    @media (min-width: $breakpoint-lg) {
+        width: 50%;
+    }
+
+    @media (min-width: $breakpoint-xl) {
+        width: 30%;
+    }
+}
+
+
+.formBrand {
+    display: inline;
+    text-align: center;
+}
+
+.forms {
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__label {
+        margin-top: 15px;
+        font-weight: 500;
+
+    }
+
+    &__input {
+        background-color: $opacity-blue;
+        border: 2px solid $intense-blue;
+        color: $blue-white;
+    }
+
+    &__button {
+        display: block;
+        width: 70%;
+        margin: 50px auto;
+    }
+}
+

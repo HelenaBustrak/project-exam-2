@@ -1,0 +1,64 @@
+.cardContainer {
+    justify-content: center;
+    margin-top: 15px;
+
+}
+
+.card {
+    width: 18rem;
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    height: 100%;
+
+    &__image {
+        height: 320px;
+    }
+
+    &__body {
+        background-color: $blue-white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $colour-secondary
+    }
+
+    &__title {
+        color: $midnight-blue;
+        display: inline;
+
+    }
+
+    &__cartIcon {
+        color: $colour-secondary;
+        font-size: 35px;
+        position: absolute;
+        float: right;
+        right: 16px;
+        bottom: 16px;
+
+    }
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #3498db;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 200px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

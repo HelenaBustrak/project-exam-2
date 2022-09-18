@@ -1,0 +1,31 @@
+.nav {
+    background-color: $opacity-blue;
+    font-weight: 500;
+
+    .nav-link {
+        color: $blue-white;
+
+        @media (min-width: $breakpoint-sm) {
+            margin-left: 0.5em;
+        }
+    }
+
+    &__brand {
+        height: 45px;
+        width: 113.5px;
+
+        @media (min-width: $breakpoint-lg) {
+            height: 74px;
+            width: 189.5px;
+        }
+    }
+
+    &__icon {
+        color: $colour-primary;
+    }
+
+
+
+}
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";

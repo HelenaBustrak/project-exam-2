@@ -1,0 +1,33 @@
+h1 {
+    font-size: 40px;
+    color: $blue-white;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    @media (min-width: $breakpoint-lg) {
+        font-size: 70px;
+    }
+}
+
+
+h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: $blue-white;
+
+    @media (min-width: $breakpoint-lg) {
+        font-size: 32px;
+    }
+}
+
+p {
+    margin: 20px 0;
+    max-width: 900px;
+
+    @media (min-width: $breakpoint-lg) {
+        font-size: 20px;
+
+    }
+}
+

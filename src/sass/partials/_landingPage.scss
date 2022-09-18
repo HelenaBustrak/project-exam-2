@@ -1,0 +1,56 @@
+.landingPage {
+
+
+    &__brand {
+        margin-top: 15px;
+    }
+
+    &__heading {
+        margin-top: 100px;
+        text-shadow: rgba(0, 0, 0, 0.665) 0px 3px 9px;
+
+        @media (min-width: $breakpoint-lg) {
+            font-size: 50px;
+        }
+
+        @media (min-width: $breakpoint-xl) {
+            font-size: 70px;
+        }
+    }
+
+    &__paragraph {
+        font-size: 18px;
+        color: $light-blue;
+        max-width: 500px;
+
+        @media (min-width: $breakpoint-lg) {
+            font-size: 23px;
+        }
+    }
+
+    &__button {
+        margin: 10px 0;
+        width: 100%;
+
+        @media (min-width: $breakpoint-xl) {
+            margin-right: 15px;
+            width: 200px;
+        }
+    }
+
+    &__video {
+        margin: 0 auto;
+        margin-top: 10px;
+
+        @media (min-width: $breakpoint-lg) {
+            width: 90%;
+            margin-top: 150px;
+        }
+
+    }
+
+    &__buttonContainer {
+        padding: 0;
+    }
+}
+

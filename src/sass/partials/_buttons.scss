@@ -1,0 +1,17 @@
+.btn-feature {
+    @include button-variant(red, white);
+    background: $linear-gradient;
+    border: none;
+    color: white;
+    font-weight: 500;
+    padding: 0.5em 0.7em;
+
+}
+
+.btn-feature-2 {
+    @include button-variant(rgba(255, 0, 0, 0), $colour-primary);
+    color: white;
+    border: 2px solid $colour-primary;
+    font-weight: 500;
+
+}

@@ -1,0 +1,29 @@
+.paymentForm {
+
+    &__heading {
+        color: $colour-primary;
+        margin-top: 20px;
+    }
+
+    &__container {
+        @media (min-width: $breakpoint-lg) {
+            display: flex;
+        }
+    }
+
+    &__right {
+        margin-top: 120px;
+        margin-left: 100px;
+    }
+
+
+}
+
+span {
+    color: #E93939;
+    display: block;
+}
+
+hr {
+    border: 2px solid $intense-blue;
+}

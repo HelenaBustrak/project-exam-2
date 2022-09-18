@@ -1,0 +1,52 @@
+.gamesDetailsContent {
+
+
+
+    &__cartContainer {
+        font-size: 32px;
+        padding-right: 0;
+        cursor: pointer;
+
+    }
+
+    &__cartContainerActive {
+        color: $colour-primary;
+        cursor: pointer;
+    }
+
+    &__cartIcon {
+        margin-right: 10px;
+    }
+
+    &__price {
+        width: 100%;
+        font-weight: bold;
+        color: $colour-primary;
+
+        h4 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+    }
+
+    h5 {
+        color: $blue-white;
+        margin-bottom: 20px;
+    }
+
+    .releaseDate {
+        margin: 20px 0;
+        color: $intense-blue;
+    }
+}
+
+.breadcrumbs-detailsPage {
+    background-color: $midnight-blue;
+    padding: 0.7em;
+    margin: 0;
+    display: inline-block;
+}
+
+.breadcrumb {
+    margin: 0;
+}

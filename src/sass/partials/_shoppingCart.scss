@@ -1,0 +1,66 @@
+.cartContainer {
+    @media (min-width: $breakpoint-lg) {
+        display: flex;
+    }
+
+    &__orderHeading {
+        color: $blue-white;
+    }
+
+    &__right {
+
+        margin-top: 50px;
+
+        @media (min-width: $breakpoint-lg) {
+            margin-left: 100px;
+        }
+    }
+
+    &__orderSummary {
+        margin-bottom: 50px;
+    }
+
+}
+
+.cartCardContainer {
+    padding: 0;
+}
+
+.totalCost {
+    color: $colour-primary;
+}
+
+.cartCard {
+    background-color: $opacity-blue;
+    padding: 1em;
+    margin-top: 20px;
+
+    &__title {
+        display: block;
+        color: $colour-primary;
+
+    }
+
+    &__image {
+        height: 150px;
+        width: 128px;
+        border-radius: 10px;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    &__remove {
+        color: #E93939;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}
+
+.goBack {
+    color: $intense-blue;
+    cursor: pointer;
+}
+
+.empyCart {
+    margin-top: 50px;
+}
