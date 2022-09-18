@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Project Exam 2 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my attempt at project exam 2 at Noroff - School of Design and Techology. 
 
 ## Available Scripts
 
