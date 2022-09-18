@@ -10,6 +10,7 @@ import {
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
+
 function Layout(props) {
   const navigate = useNavigate();
 
@@ -18,8 +19,8 @@ function Layout(props) {
     localStorage.clear();
   }
   return (
-    <div className="wrapper">
-      <body>
+
+      <div className="wrapper">
       <Navbar variant="dark" className="nav">
         <Container>
           <Navbar.Brand as={NavLink} to="/">
@@ -41,12 +42,9 @@ function Layout(props) {
         </Container>
       </Navbar>
       {props.children}
-      <footer className="footer mt-auto">
-        <Container className="footer__content">Made by Helena Holte Bustrak</Container>
-      </footer>
-      </body>
+      </div>
       
-    </div>
+      
   );
 }
 

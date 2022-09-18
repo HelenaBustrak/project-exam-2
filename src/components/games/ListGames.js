@@ -20,6 +20,7 @@ export default function ListGames() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+
   useEffect(function () {
     async function fetchGames(props) {
       try {

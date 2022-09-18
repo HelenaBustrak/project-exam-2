@@ -8,6 +8,8 @@ import getExistingCart from "../../utils/getExistingCart";
 import AddToCart from "../cart/AddToCart";
 import { Breadcrumb } from "react-bootstrap";
 
+
+
 export default function GameDetails({ setIsActive, isActive }) {
   const [game, setGame] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,17 +20,14 @@ export default function GameDetails({ setIsActive, isActive }) {
 
   const { id } = useParams();
 
-  console.log(id);
-
   if (!id) {
     navigate("/games");
   }
 
-  const gameUrl = BASE_URL + "/" + id;
 
   useEffect(
     function () {
-      async function fetchGame() {
+      async function fetchGame(props) {
         try {
           const response = await axios({
             url: BASE_URL,
@@ -54,16 +53,16 @@ export default function GameDetails({ setIsActive, isActive }) {
       }
       fetchGame();
     },
-    [gameUrl]
+[id]
   );
 
   if (loading) {
     return (
-      <>
+
         <Container>
           <div className="loader"></div>
         </Container>
-      </>
+
     );
   }
 
@@ -101,7 +100,7 @@ export default function GameDetails({ setIsActive, isActive }) {
         });
 
         return (
-          <>
+          <Container fluid key={gameDetail.name}>
             <GamesHeader
               heading={gameDetail.name}
               image={`//images.igdb.com/igdb/image/upload/t_1080p/${gameDetail.screenshots[0].image_id}.jpg`}
@@ -130,7 +129,7 @@ export default function GameDetails({ setIsActive, isActive }) {
               <p></p>
             </GamesHeader>
 
-            <Container>
+            <Container key={gameDetail.id}>
               <Container className="gamesDetailsContent">
                 <p className="gamesDetailsContent__par">{gameDetail.summary}</p>
                 <Container className="d-flex justify-content-between">
@@ -152,7 +151,9 @@ export default function GameDetails({ setIsActive, isActive }) {
                 </div>
               </Container>
             </Container>
-          </>
+          </Container>
+            
+        
         );
       })}
     </>
